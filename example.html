@@ -1,0 +1,1501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0037)http://www.chncpa.org/zmyyh/index.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--title嵌套start-->
+        <meta name="viewport" content="width=device-width, initial-scale=0.1,  user-scalable=no">
+        <title></title>
+        <link rel="shortcut icon" type="image/x-icon" href="../../images/ico.ico"/>
+        <script>
+
+            var wz = "首页@艺术活动@周末音乐会"
+            var wzs = wz.split("@");
+            for (var i = wzs.length - 1; i > 0; i--) {
+                document.title += wzs[i] + "_";
+            }
+            document.title += "国家大剧院";
+        </script>
+        <!--title嵌套end-->
+        <link type="text/css" href="../../images/reset_58.css" rel="stylesheet">
+        <link type="text/css" href="../../images/yspj_gai.css" rel="stylesheet">
+        <link type="text/css" href="../../images/tmpl_8.css" rel="stylesheet">
+        <script type="text/javascript" async="" src="../../images/gs_59.js"></script>
+        <script type="text/javascript" src="../../images/jquery-1_57.7.2.min.js"></script>
+        <script type="text/javascript" src="../../images/publicMin_56.js"></script>
+        <script type="text/javascript" src="../../images/yspj_5.js"></script>
+        <script type="text/javascript" src="../../images/jquery-ui-1_8.9.2.custom.js"></script>
+        <script type="text/javascript" src="../../images/slide_10.js"></script>
+        <script type="text/javascript" src="../../images/my-scroll_8.js"></script>
+        <script type="text/javascript" src="../../images/util_12.js"></script>
+        <script type="text/javascript" src="../../images/datapicker_3.js"></script>
+        <script type="text/javascript" src="../../images/jquery_6.mousewheel.js"></script>
+        <style>
+            .yspj-zmyyh-pro-list dt {
+                height: 38px;
+                overflow: hidden
+            }
+
+            dd.nieps {
+                height: 33px;
+                padding-top: 0px;
+                padding-bottom: 0;
+                line-height: 33px;
+            }
+
+            .dd.nieps {
+                padding: 0
+            }
+
+            html {
+                background: none;
+                overflow: inherit;
+                height: 100%
+            }
+
+            .yspj-zmyyh-pro-list dt {
+                height: 38px;
+                overflow: inherit
+            }
+
+            .yspj-zmyyh-pro-list dd.ycjc {
+                height: 37px;
+                overflow: hidden
+            }
+
+            .yspj-title-a {
+                display: inline-block
+            }
+
+            body {
+                margin: 0;
+                padding: 0
+            }
+
+            dd.nieps .dd {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        </style>
+        <script type="text/javascript">
+
+            //字符自动根据高度截断
+            $(function() {
+                if (!$('.zwhd').parent().find('dl').length) {
+                    $('.zwhd').show()
+                }
+                $(".dhy_height").each(function(i) {
+                    var divH = $(this).height();
+                    var $p = $(".yspj-title-a", $(this)).eq(0);
+                    while ($p.outerHeight() > divH) {
+                        $p.text($p.text().replace(/(\s)*([a-zA-Z0-9]+|\W)(\.\.\.)?$/, "..."));
+                    }
+                    ;
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- 头部 start-->
+        <!--20220228-->
+        <link rel="shortcut icon" href="https://www.chncpa.org/images/bitbug_favicon.ico">
+        <script>
+            function createCommonPlayer(a1, a2, a3, a4, a5, a6) {
+
+                return
+            }
+            ;$(function() {
+                if (!$('body').hasClass('fzhz')) {
+                    $('body').css({
+                        "background": "url(https://www.chncpa.org/images/whggbg.jpg) center top no-repeat",
+                        "background-attachment": "fixed"
+                    });
+                }
+                $('body.xszq').css({
+                    "background": "url(https://www.chncpa.org/images/whggbg.jpg) center top no-repeat"
+                });
+                $('body.xszq_new').css({
+                    "background": "url(/images_online/images/hysc_index_bg_01.jpg) center top no-repeat"
+                });
+                $('body.taihu').css({
+                    "background": "url(/cal_cn/assets/thbg.jpg) center top no-repeat fixed"
+                });
+                $('body.xsjy').css({
+                    "background": "none"
+                });
+                $(".big").hover(function() {
+                    $(this).find(".des").css("display", "block")
+                }, function() {
+                    $(this).find(".des").css("display", "none")
+                });
+            })
+            var w_video_c, h_video_c, w_video_zx, h_video_zx;
+
+            if (parseInt($(window).width()) > 992) {
+                w_video_c = 640;
+                h_video_c = 360;
+                w_video_zx = 800;
+                h_video_zx = 450;
+            } else {
+                w_video_c = parseInt($(window).width()) * .9;
+                h_video_c = parseInt($(window).width()) * .9 * 360 / 640;
+                w_video_zx = parseInt($(window).width()) - 20;
+                h_video_zx = (parseInt($(window).width()) - 20) * 360 / 640;
+            }
+            var isHttps = location.href.substr(0, 5) == "https" ? "true" : "false";
+
+            function bofang(playerId, initMyAray, posterImg, isZx) {
+                var posterImg = posterImg || '';
+                var w_video, h_video;
+                w_video = isZx ? w_video_zx : w_video_c;
+                h_video = isZx ? h_video_zx : h_video_c;
+                $("#" + playerId).html("");
+                playerParas = {
+                    divId: playerId,
+                    /*播放器容器id，必填项*/
+                    w: w_video,
+                    /*播放器宽度，必填项*/
+                    h: h_video,
+                    t: "sports",
+                    /*台名称，比如news,sports,tv等，必填项*/
+                    videoCenterId: initMyAray,
+                    /*视频生产中心guid，必填项*/
+                    br: "",
+                    /*设置默认码率*/
+                    id: "null",
+                    /*可填null,必填项*/
+                    videoId: "VIDE100215108600",
+                    /*视频集id*/
+                    url: "",
+                    /*视频页面url，如http://tv.cntv.cn/video/C18472/a28126e5e0424a44af6a9bc4c5a47742*/
+                    articleId: "",
+                    /*文章id*/
+                    filePath: "",
+                    /*文件路径*/
+                    sysSource: "",
+                    /*视频来源*/
+                    channelId: "",
+                    /*可为空*/
+                    scheduleId: "C18472000001",
+                    /*关键字*/
+                    isLogin: "",
+                    /*用户中心相关，是否登录*/
+                    userId: "C18472000001",
+                    /*用户中心相关，用户登录id*/
+                    isDefaultPreImage: "true",
+                    /*是否默认从vdn取图，非自动播放情况下才有效*/
+                    isAutoPlay: "false",
+                    /*是否自动播放，只有false为不自动播放，其它值为自动播放*/
+                    posterImg: posterImg,
+                    /*播放器前贴图片*/
+                    isLeftBottom: "true",
+                    /*播放按钮是否在播放器左下角,为true表示是，false表示播放按钮在播放器中间*/
+                    isAudio: "false",
+                    /*是否是音频播放器,为true表示是音频，false表示是视频*/
+                    isVod4k: "false",
+                    /*是否为4k播放器，true是4k,false不是*/
+                    isHttps: isHttps,
+                    /*是否https视频，true是,false不是*/
+                    wmode: "opaque",
+                    /*flash播放器的窗口模式，默认为opaque*/
+                    wideMode: "normal",
+                    /*flash播放器的窗口模式，默认为opaque*/
+                    listMode: "false",
+                    /*点播播放器初始化参数：是否列表模式，默认false，false时不显示下一集按钮，不发送新增的下一集事件，设置中没有“自动播放下一集”选项；字符串类型*/
+                    nextTitle: "",
+                    /*下一集标题，与listMode 配对使用*/
+                    nextThumbnail: "",
+                    /*下一集预览图URL，与listMode 配对使用*/
+                    setupOn: "false",
+                    /*是否显示设置按钮，默认为false*/
+                    hasBarrage: "false",
+                    /*是否有弹幕功能，默认false，false时不显示弹幕、不显示弹幕设置按钮、不显示弹幕开关、不访问弹幕接口和表情包配置接口e*/
+                    playerType: "vod_h5",
+                    /*播放器类型，vod表示普通播放器*/
+                    webFullScreenOn: "false",
+                    /*是否显示全屏按钮，默认true表示显示*/
+                    drm: "true",
+                    h5: {
+                        /*倍速*/
+                        ui_rate: true
+                    }
+                };
+                createVodPlayer(playerParas);
+            }
+
+            function play(playerId, initMyAray, posterImg) {
+                /*销毁播放器*/
+                if (typeof (playerParas) != "undefined") {
+                    if (playerParas._isH5 !== undefined && playerParas._isH5) {
+                        player = vodh5player.namespace.getVodPlayer();
+                        if (player && !player.isDisposed_) {
+                            vodh5player.namespace.dispose(player);
+                            bofang(playerId, initMyAray, posterImg)
+                        }
+                    } else {
+                        $("#" + playerId).html("");
+                        bofang(playerId, initMyAray, posterImg)
+                    }
+                } else {
+                    bofang(playerId, initMyAray, posterImg)
+                }
+            }
+        </script>
+        <style>
+            .blue-title {
+                font-size: 12px
+            }
+
+            .nav a {
+                font-family: "微软雅黑"
+            }
+
+            body {
+                min-width: 1200px;
+                margin: 0 auto;
+                background: url(https://www.chncpa.org/images/whggbg.jpg) center top no-repeat;
+                background-attachment: fixed;
+                background-size: 100% auto
+            }
+
+            .nav,.nav .inner {
+                position: relative
+            }
+
+            /*blockquote,body,button,code,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,td,textarea,th,ul{padding:0;font-family:'Microsoft YaHei',sans-serif;max-width:1920px;margin:0 auto}*/
+            h1,h2,h3,h4,h5,h6 {
+                font-weight: 400;
+                font-size: 100%
+            }
+
+            a {
+                color: #000;
+                text-decoration: none
+            }
+
+            img {
+                border: none;
+                vertical-align: middle
+            }
+
+            li,ol,ul {
+                list-style: none
+            }
+
+            body,html,ul {
+                padding: 0;
+                margin: 0
+            }
+
+            .inner {
+                width: 1200px;
+                margin: 0 auto
+            }
+
+            .left {
+                float: left
+            }
+
+            .cf::after {
+                display: block;
+                clear: both;
+                content: "";
+                visibility: hidden;
+                height: 0
+            }
+
+            .cf {
+                zoom:1}
+
+            .nav {
+                width: 100%;
+                background: #000;
+                height: 92px
+            }
+
+            .nav .inner {
+                width: 1200px;
+                height: 100%;
+                margin: 0 auto;
+                z-index: 2;
+                background: #000
+            }
+
+            .nav .inner .list {
+                height: 46px;
+                position: absolute;
+                top: 46px
+            }
+
+            .nav .inner .list .big {
+                float: left;
+                text-align: center;
+                position: relative;
+                z-index: 99
+            }
+
+            .nav .inner .list .big .href {
+                padding: 0 24.7px;
+                display: block;
+                color: #fff;
+                line-height: 46px;
+                font-size: 16px
+            }
+
+            .nav .inner .list .right .href {
+                padding: 0 31px
+            }
+
+            .nav .inner .list .big:hover {
+                background: #333
+            }
+
+            .nav .inner .list .des {
+                width: 100%;
+                background: url(https://www.chncpa.org/images/header_bg.png) 50% 0 no-repeat #e8edf4;
+                padding-top: 15px;
+                display: none;
+                position: absolute;
+                top: 42px
+            }
+
+            .nav .inner .list .des li {
+                height: 40px;
+                line-height: 40px
+            }
+
+            .nav .inner .list .des li a {
+                color: #646464;
+                font-size: 14px
+            }
+
+            .nav .inner .list .des li:hover {
+                background: #d1dceb
+            }
+
+            .nav .inner .list .des li:hover a {
+                color: #0b4b9d
+            }
+
+            .nav .inner .logo {
+                width: 112px;
+                height: 116px;
+                position: absolute;
+                left: 50%;
+                margin-left: -66px;
+                z-index: 9999
+            }
+
+            .nav .man {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 46px;
+                background: #1f1f1f;
+                z-index: 99
+            }
+
+            .nav .man ul {
+                width: 1178px;
+                margin: 10px auto 0;
+                padding-right: 25px
+            }
+
+            .nav .man li {
+                width: 36px;
+                float: right
+            }
+
+            .ylheader {
+                height: 92px;
+                position: absolute;
+                left: 0;
+                z-index: 9999;
+                top: 0;
+                width: 100%;
+            }
+        </style>
+        <div class="nav" style="z-index:999999">
+            <div class="inner">
+                <ul class="list cf">
+                    <li class="big" style="width:82px">
+                        <a target="_blank" href="https://www.chncpa.org" class="href" style="padding:0">首页</a>
+                    </li>
+                    <li class="big" style="width:108px">
+                        <a target="_blank" href="https://www.chncpa.org/ycgp_220/" class="href" style="padding:0">演出购票</a>
+                        <div class="des" style="display:none">
+                            <ol>
+                                <li>
+                                    <a target="_blank" href="http://www.chncpa.org/ycgp_220/ycap/">演出日历</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/searchall/?typey=26&typec=">歌剧</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/searchall/?typey=30&typec=">音乐</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/searchall/?typey=36&typec=">舞蹈</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/searchall/?typey=41&typec=">戏剧</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/searchall/?typey=45&typec=">戏曲</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li class="big" style="width:108px">
+                        <a target="_blank" href="https://www.chncpa.org/cgyl_278/" class="href" style="padding:0">参观游览</a>
+                        <div class="des">
+                            <ol>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/cgyl_278/cggp/">参观购票</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/cgyl_278/jyjg/">剧院景观</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/cgyl_278/yszl/">艺术展览</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/cgyl_278/ysjpzl/">艺术精品长廊</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/cgyl_278/cyfw/">餐饮服务</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li class="big" style="width:128px">
+                        <a target="_blank" href="https://www.chncpa.org/yshd/" class="href" style="padding:0">艺术活动</a>
+                        <div class="des">
+                            <ol>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/yspj_260/zmylh_262/">周末音乐会</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/yspj_260/jdysjt/">经典艺术讲堂</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/yspj_260/zjcpldsj/">走进唱片里的世界</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/yshd/ysjyjs/?sw=%E5%8F%B0%E6%B9%96%E6%98%9F%E6%9C%9F%E9%9F%B3%E4%B9%90%E4%BC%9A">台湖星期音乐会</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/yspj_260/yszlzx/">艺术资料中心</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li class="big" style="width:110px">
+                        <a target="_blank" href="https://www.chncpa.org/zxdt_331/" class="href" style="padding:0">资讯动态</a>
+                        <div class="des">
+                            <ol>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/zxdt_331/zxdtlm/yczx_332/">热点聚焦</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/zxdt_331/zxdtlm/jyxw_333/">剧院新闻</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/ysjl_341/">艺术交流</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li class="right big" style="margin-left:128px;width:140px">
+                        <a target="_blank" href="http://www.ncpa-classic.com" class="href" style="padding:0">古典音乐频道</a>
+                        <div class="des">
+                            <ol>
+                                <li>
+                                    <a target="_blank" href="https://www.ncpa-classic.com/live/index.shtml">直播</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.ncpa-classic.com/performances/more/index.shtml">演出实况</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.ncpa-classic.com/highlights/more/index.shtml">精彩瞬间</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.ncpa-classic.com/documentaries/more/index.shtml">纪录片</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.ncpa-classic.com/digitalrecords/index.shtml">数字录音</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.ncpa-classic.com/audioprogrammes/index.shtml">有声节目</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.ncpa-classic.com/news/index.shtml">音乐资讯</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li class="right big" style="width:116px">
+                        <a target="_blank" href="https://www.chncpa.org/hyjlb_366/" class="href" style="padding:0">会员俱乐部</a>
+                        <div class="des">
+                            <ol>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/hyjlb_366/gdjcjy/">精彩活动</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/hyjlb_366/hysc/">会员商城</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/bzzx/hyjlb_401/201607/t20160726_39986.shtml">入会指南</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://subject06.chncpa.org">团体客户手册</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li class="right big" style="width:152px">
+                        <a target="_blank" href="https://www.chncpa.org/jmsc_237/" class="href" style="padding:0">艺术生产</a>
+                        <div class="des">
+                            <ol>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/jmsc_237/yzjm/">院藏剧目</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/jmsc_237/zytt/gxy/">国家大剧院管弦乐团</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/jmsc_237/zytt/hct/">国家大剧院合唱团</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/jmsc_237/zytt/gjyyd/">国家大剧院歌剧演员队</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li class="right big" style="width:120px">
+                        <a target="_blank" href="https://www.chncpa.org/gywm0118/" class="href" style="padding:0">关于我们</a>
+                        <div class="des">
+                            <ol>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/gywm0118/jywh/">剧院文化</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/gywm0118/jgsz/yld/">院领导</a>
+                                </li>
+                                <!--
+<li>
+                                <a style="cursor:default">剧院运营</a>
+                            </li>
+<li>
+                                <a target="_blank" href="https://www.chncpa.org/jygl_374/jyyy/">机构设置</a>
+                            </li>
+-->
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/gywm0118/gywm_n/">发展与合作</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.chncpa.org/dbdh/lxwm/201607/t20160711_29789.shtml">联系我们</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="man">
+                <iframe src="https://ticket.chncpa.org//jsp/common/siteheader.jsp" style="position:relative;right:-285px;width:1178px;height:60px" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+            </div>
+            <a target="_blank" href="https://www.chncpa.org/" class="logo" style="width:128px;position:absolute;left:50%;margin-left:-64px;top:0;z-index:99999">
+                <img src="https://www.chncpa.org/images/logo1.png" alt=""/>
+            </a>
+        </div>
+        <!-- 头部 end-->
+        <div class="yspj-wrap">
+            <input type="hidden" id="plink" value="http://ticket.chncpa.org/"/>
+            <div class="blue-title">
+                <a href="../../" target="_self" title="首页">首页</a>
+                &nbsp;&gt;&nbsp;<a href="https://www.chncpa.org/yshd/" target="_self" title="艺术活动">艺术活动</a>
+                &nbsp;&gt;&nbsp;周末音乐会
+  
+            </div>
+            <div class="yspj-main">
+                <div class="yspj-main-left">
+                    <dl class="yspj-hot-pro">
+                        <dd class="pro-img">
+                            <!-- 2014-10-30 llli 新增图片点击链接 -->
+                            <img src="./zmylhjj/201608/P020230111335730148192.jpg" width="466" height="330" alt=""/>
+                        </dd>
+                        <dt class="jdysjt">周末音乐会
+          </dt>
+                        <dd class="pro-cont-text" style="text-indent:2em">
+                            <div>国家大剧院联手名家名团，于每周末推出“周末音乐会”，涉及交响乐、民族管弦乐、室内乐、歌剧、合唱等多种艺术形式。周末音乐会荟萃一系列优秀的中外交响乐作品，以“演讲结合、赏析并重”为特点，实行“名家、名团、低票价”的亲民政策，为音乐爱好者提供全方位的音乐视角，为广大艺术爱好者提供近距离接触音乐经典的机会，感受高雅艺术带给心灵的震撼。</div>
+                        </dd>
+                    </dl>
+                    <div class="yspj-lanmu-title">
+                        <h2>近期活动安排
+        </h2>
+                        <a href="./wqhg/">
+                            往期回顾
+        <em>&gt;&gt;</em>
+                        </a>
+                    </div>
+                    <div class="jdysjt-contmain">
+                        <p style="display:none;font-size:16px;line-height:40px;text-align:center" class="zwhd">暂无活动</p>
+                        <dl class="yspj-zmyyh-pro-list">
+                            <dd class="zm-list-img">
+                                <a href="http://ticket.chncpa.org/activProduct-1096035.html" target="_blank">
+                                    <img src="./jqhdap/202303/P020230314587923708439.jpg" width="226" height="160" alt=""/>
+                                </a>
+                            </dd>
+                            <dt class="dhy_height">
+                                <a title='【国乐云韶系列】“丝竹雅韵会知音”江南丝竹音乐会' href="http://ticket.chncpa.org/activProduct-1096035.html" target="_blank" class="yspj-title-a">“丝竹雅韵会知音”江南丝竹音乐会
+                </a>
+                            </dt>
+                            <dd class="ycjc">2023/04/01 10:30
+                &nbsp;小剧场
+              </dd>
+                            <!-- 2011-11-14 llli 修改显示演出团体 -->
+                            <dd class="over nieps">
+                                <div>
+                                    <div class="dd">
+                                    <!--248734-->
+                                    嘉宾：
+                        
+                          汤良兴
+                        
+                        
+                      
+                      
+                    
+                    
+                    </div>
+                                </div>
+                            </dd>
+                            <dd>
+                                <a href="http://ticket.chncpa.org/activProduct-1096035.html" target="_blank" class="yspj-book-ticket">订票</a>
+                            </dd>
+                        </dl>
+                        <dl class="yspj-zmyyh-pro-list">
+                            <dd class="zm-list-img">
+                                <a href="http://ticket.chncpa.org/activProduct-1096058.html" target="_blank">
+                                    <img src="./jqhdap/202303/P020230314619444250986.jpg" width="226" height="160" alt=""/>
+                                </a>
+                            </dd>
+                            <dt class="dhy_height">
+                                <a title='【国乐云韶系列】“画外之音”中央民族乐团音乐会' href="http://ticket.chncpa.org/activProduct-1096058.html" target="_blank" class="yspj-title-a">“画外之音”中央民族乐团音乐会
+                </a>
+                            </dt>
+                            <dd class="ycjc">2023/04/09 10:30
+                &nbsp;音乐厅
+              </dd>
+                            <!-- 2011-11-14 llli 修改显示演出团体 -->
+                            <dd class="over nieps">
+                                <div>
+                                    <div class="dd">
+                                    <!--235927-->
+                                    演出团体：
+                            
+                              中央民族乐团
+                            
+                            
+                          
+                          
+                        
+                      
+                    
+                    
+                    </div>
+                                </div>
+                            </dd>
+                            <dd>
+                                <a href="http://ticket.chncpa.org/activProduct-1096058.html" target="_blank" class="yspj-book-ticket">订票</a>
+                            </dd>
+                        </dl>
+                        <dl class="yspj-zmyyh-pro-list m-r-0">
+                            <dd class="zm-list-img">
+                                <a href="http://ticket.chncpa.org/activProduct-1096100.html" target="_blank">
+                                    <img src="./jqhdap/202303/P020230314646756297099.jpg" width="226" height="160" alt=""/>
+                                </a>
+                            </dd>
+                            <dt class="dhy_height">
+                                <a title='【唱响经典系列】西方经典歌剧“美妙之声”莫扎特音乐会版歌剧《费加罗的婚礼》' href="http://ticket.chncpa.org/activProduct-1096100.html" target="_blank" class="yspj-title-a">“美妙之声”莫扎特音乐会版歌剧《费加罗的婚礼》
+                </a>
+                            </dt>
+                            <dd class="ycjc">2023/04/15 10:30
+                &nbsp;小剧场
+              </dd>
+                            <!-- 2011-11-14 llli 修改显示演出团体 -->
+                            <dd class="over nieps">
+                                <div>
+                                    <div class="dd">
+                                    <!--237708-->
+                                    指挥：
+                      
+                        焦淼
+                      
+                      
+                    
+                    
+                    
+                    </div>
+</TRS_CONDITION></div></dd>
+<dd>
+    <a href="http://ticket.chncpa.org/activProduct-1096100.html" target="_blank" class="yspj-book-ticket">订票</a>
+</dd>
+</dl>
+<dl class="yspj-zmyyh-pro-list">
+    <dd class="zm-list-img">
+        <a href="http://ticket.chncpa.org/activProduct-1096106.html" target="_blank">
+            <img src="./jqhdap/202303/P020230314661981953887.jpg" width="226" height="160" alt=""/>
+        </a>
+    </dd>
+    <dt class="dhy_height">
+        <a title='【听音品乐系列】“相映生辉”中国交响乐团音乐会' href="http://ticket.chncpa.org/activProduct-1096106.html" target="_blank" class="yspj-title-a">“相映生辉”中国交响乐团音乐会
+                </a>
+    </dt>
+    <dd class="ycjc">2023/04/16 10:30
+                &nbsp;音乐厅
+              </dd>
+    <!-- 2011-11-14 llli 修改显示演出团体 -->
+    <dd class="over nieps">
+        <div>
+            <div class="dd">
+            <!--248788-->
+            指挥：
+                      
+                        孙一凡
+                      
+                      
+                    
+                    
+                    
+                    </div>
+        </div>
+    </dd>
+    <dd>
+        <a href="http://ticket.chncpa.org/activProduct-1096106.html" target="_blank" class="yspj-book-ticket">订票</a>
+    </dd>
+</dl>
+<dl class="yspj-zmyyh-pro-list">
+    <dd class="zm-list-img">
+        <a href="http://ticket.chncpa.org/activProduct-1096107.html" target="_blank">
+            <img src="./jqhdap/202303/P020230314672669866387.jpg" width="226" height="160" alt=""/>
+        </a>
+    </dd>
+    <dt class="dhy_height">
+        <a title='【家庭音乐会系列】课本中的国乐“管弦丝竹知多少”中国广播民族乐团音乐会' href="http://ticket.chncpa.org/activProduct-1096107.html" target="_blank" class="yspj-title-a">课本中的国乐“管弦丝竹知多少”中国广播民族乐团音乐会
+                </a>
+    </dt>
+    <dd class="ycjc">2023/04/22 10:30
+                &nbsp;音乐厅
+              </dd>
+    <!-- 2011-11-14 llli 修改显示演出团体 -->
+    <dd class="over nieps">
+        <div>
+            <div class="dd">
+            <!--248793-->
+            指挥：
+                      
+                        葛亚南
+                      
+                      
+                    
+                    
+                    
+                    </div>
+        </div>
+    </dd>
+    <dd>
+        <a href="http://ticket.chncpa.org/activProduct-1096107.html" target="_blank" class="yspj-book-ticket">订票</a>
+    </dd>
+</dl>
+<dl class="yspj-zmyyh-pro-list m-r-0">
+    <dd class="zm-list-img">
+        <a href="http://ticket.chncpa.org/activProduct-1096128.html" target="_blank">
+            <img src="./jqhdap/202303/P020230315407717038139.jpg" width="226" height="160" alt=""/>
+        </a>
+    </dd>
+    <dt class="dhy_height">
+        <a title='【邂逅室内乐系列】“自暖春至凛冬”柴科夫斯基《四季》钢琴三重奏音乐会' href="http://ticket.chncpa.org/activProduct-1096128.html" target="_blank" class="yspj-title-a">“自暖春至凛冬”柴科夫斯基《四季》钢琴三重奏音乐会
+                </a>
+    </dt>
+    <dd class="ycjc">2023/04/22 10:30
+                &nbsp;小剧场
+              </dd>
+    <!-- 2011-11-14 llli 修改显示演出团体 -->
+    <dd class="over nieps">
+        <div>
+            <div class="dd">
+            <!--248795-->
+            演出团体：
+                            
+                              基因三重奏
+                            
+                            
+                          
+                          
+                        
+                      
+                    
+                    
+                    </div>
+</TRS_CONDITION></div></dd>
+<dd>
+    <a href="http://ticket.chncpa.org/activProduct-1096128.html" target="_blank" class="yspj-book-ticket">订票</a>
+</dd>
+</dl></div><link href="../../images/untilwws.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+    .page {
+        width: 100%;
+        padding: 80px 0;
+        height: 35px;
+        font-size: 14px;
+        line-height: 35px;
+        color: #808080;
+        text-align: center;
+    }
+
+    .page .next {
+        float: none;
+        font-family: "微软雅黑";
+    }
+
+    .page .prev {
+        float: none;
+        font-family: "微软雅黑";
+    }
+
+    .page span {
+        font-weight: bold;
+        width: 40px;
+        height: 35px;
+        text-align: center;
+        background: #215fb5;
+        margin: 0 5px;
+        display: inline-block;
+        color: #ffffff;
+        float: none
+    }
+
+    .page span.prev {
+        font-weight: unset;
+        width: 70px;
+        height: 35px;
+        text-align: center;
+        background: #e0edfe;
+        margin-right: 10px;
+        display: inline-block;
+        color: #808080;
+        float: none
+    }
+
+    .page span.next {
+        font-weight: unset;
+        width: 70px;
+        height: 35px;
+        text-align: center;
+        background: #e0edfe;
+        margin-left: 10px;
+        display: inline-block;
+        color: #808080;
+        float: none
+    }
+
+    .page a {
+        color: #808080;
+    }
+
+    .page a.prev {
+        width: 70px;
+        height: 35px;
+        text-align: center;
+        background: #e0edfe;
+        margin-right: 10px;
+        display: inline-block
+    }
+
+    .page a.next {
+        width: 70px;
+        height: 35px;
+        text-align: center;
+        background: #e0edfe;
+        margin-left: 10px;
+        display: inline-block
+    }
+
+    a.prev:hover,a.next:hover {
+        background: #215fb5;
+        color: #fff;
+    }
+
+    .page a {
+        width: 40px;
+        height: 35px;
+        background: #e0edfe;
+        text-align: center;
+        display: inline-block;
+        margin: 0 5px;
+        padding: 0
+    }
+
+    .page a:hover {
+        background: #215fb5;
+        color: #fff;
+    }
+
+    .page a.on {
+        background: #215fb5;
+        color: #fff;
+    }
+
+    .page a.eli {
+        background: none;
+        width: 20px;
+    }
+
+    body {
+        background: #fff url(/images/bgss.jpg) no-repeat center -60px;
+        background-attachment: fixed
+    }
+
+    .page ul li {
+        padding: 0;
+        border-bottom: none
+    }
+</style>
+<div id="pages1" style="width:500px; margin:0 auto; overflow:hidden">
+    <div id="pages2" class="page">
+        <script type="text/javascript">
+            var currentPage = 0;
+            //所在页从0开始
+            var prevPage = currentPage - 1
+            //上一页
+            var nextPage = currentPage + 1
+            //下一页
+            var countPage = 1
+            //共多少页
+            //最外层 if 开始
+            if (countPage >= 2) {
+                //document.write("共" + countPage + "页&nbsp;&nbsp;");
+                //设置上一页代码
+                //if (countPage >= 2 && currentPage != 0 && currentPage != 1)
+                //     document.write("<a class='prev'>上一页</a>");
+                if (countPage >= 2 && currentPage == 1)
+                    document.write("<a href=\"index.shtml\" class='prev'>上一页</a>");
+                if (countPage >= 2 && currentPage > 1)
+                    document.write("<a href=\"index" + "_" + prevPage + "." + "shtml\" class='prev'>上一页</a>");
+                // 第一页的时候，上一页不显示
+                //else
+                //       document.write("<span class='prev'>上一页</span>");
+                //循环
+
+                if (countPage > 5) {
+
+                    if (currentPage > 2 && currentPage <= countPage - 4) {
+                        for (var i = currentPage - 2; i <= currentPage + 2; i++) {
+                            if (currentPage == i)
+                                document.write("<span >" + (i + 1) + "</span>");
+                            else if (i == 0)
+                                document.write("<a href=\"index.shtml\">" + (i + 1) + "</a>&");
+                            else
+                                document.write("<a href=\"index" + "_" + i + "." + "shtml\" >" + (i + 1) + "</a>");
+                        }
+                    } else {
+                        if (currentPage <= 2) {
+
+                            for (var i = 0; i < 5; i++) {
+                                if (currentPage == i)
+                                    document.write("<span >" + (i + 1) + "</span>");
+                                else if (i == 0)
+                                    document.write("<a href=\"index.shtml\" >" + (i + 1) + "</a>");
+                                else
+                                    document.write("<a href=\"index" + "_" + i + "." + "shtml\" >" + (i + 1) + "</a>");
+                            }
+                        } else {
+                            for (var i = countPage - 5; i < countPage; i++) {
+                                if (currentPage == i)
+                                    document.write("<span >" + (i + 1) + "</span>");
+                                else if (i == 0)
+                                    document.write("<a href=\"index.shtml\" >" + (i + 1) + "</a>");
+                                else
+                                    document.write("<a href=\"index" + "_" + i + "." + "shtml\" >" + (i + 1) + "</a>");
+                            }
+                        }
+                    }
+                } else {
+                    for (var i = 0; i < countPage; i++) {
+                        if (currentPage == i)
+                            document.write("<span >" + (i + 1) + "</span>");
+                        else if (i == 0)
+                            document.write("<a href=\"index.shtml\">" + (i + 1) + "</a>");
+                        else
+                            document.write("<a href=\"index" + "_" + i + "." + "shtml\" >" + (i + 1) + "</a>");
+                    }
+                }
+
+                //设置下一页代码
+                if (countPage >= 2 && currentPage != (countPage - 1))
+                    //        document.write("<a href=\"index" + "_" + nextPage + "." + "shtml\" class='next'>下一页</a><a href=\"index_" + (countPage - 1) + ".shtml\" class='next'>尾页</a>");
+
+                    document.write("<a href=\"index" + "_" + nextPage + "." + "shtml\" class='next'>下一页</a>");
+
+                //最后一页的时候，不显示下一页    
+                //else
+                //        document.write("<span>下一页</span><span>尾页</span>");
+                //document.write("<span class='next'>下一页</span>");
+
+                //跳转页面
+                /*
+    document.write("<font class='9ptb'>转到第<input type='text' id='num' value=" + (currentPage + 1) +" style='width:30px;font-size:12px;' />页" +
+        "&nbsp;<input style='font-size:12px' type='submit' value='提交' onclick='javacript:toPage()' /></font>");
+*/
+                function toPage() {
+                    var _num = document.getElementById("num").value;
+                    if (isNaN(_num)) {
+                        alert("请输入数字");
+                        return false;
+                    }
+                    var str = "index" + "_" + (_num - 1) + "." + "shtml";
+                    var url = location.href.substring(0, location.href.lastIndexOf("/") + 1);
+                    if (_num <= 1 || _num == null)
+                        location.href = url + "index" + "." + "shtml";
+                    else if (_num > countPage)
+                        alert("本频道最多" + countPage + "页");
+                    else
+                        location.href = url + str;
+                }
+                document.getElementById("pages1").style.display = "block";
+                document.getElementById("pages2").style.display = "block";
+            } else {
+                document.getElementById("pages1").style.display = "none";
+                document.getElementById("pages2").style.display = "none";
+            }
+            //  外层 if 结束
+
+            $(function() {
+                var as = $("#pages1 a");
+                for (var i = 0; i < as.length; i++) {
+                    as.eq(i).attr("target", "_self");
+                }
+            })
+        </script>
+    </div>
+</div>
+</div>
+<div class="yspj-main-right">
+    <!-- 艺术普及活动查询 -->
+    <script type="text/javascript" charset="utf-8">
+        function find() {
+            var linkurl = "";
+            var keyword = Trim($("#gjc").val());
+            var begin = $("#begindate").val();
+            var end = $("#enddat").val();
+            var datestr = begin + end;
+            datestr = datestr.replaceAll("-", "");
+
+            var typeajx = $("#typeajx").val();
+            var base = $("#base").val();
+
+            var ysml = $("input[name='ysml']:checked").val();
+            if (ysml == "undefined")
+                ysml = "";
+            var cha = $("input[name='cha']:checked").val();
+            if (cha == "undefined")
+                cha = "";
+
+            if (keyword == '关键字') {
+                keyword = '';
+            }
+
+            location.href = linkurl + "/searchall?stype=hd&sw=" + keyword + "&hdstrdate=" + begin + "&hdenddate=" + end + "&hdtype=" + typeajx + "&hdysml=" + ysml + "&pdate=" + cha;
+
+        }
+
+        String.prototype.replaceAll = function(str1, str2) {
+            var str = this;
+            var result = str.replace(eval("/" + str1 + "/gi"), str2);
+            return result;
+        }
+
+        function cha() {
+            $("input[name=cha]").attr("disabled", true);
+        }
+
+        function date() {
+            $("#begindate").attr("disabled", true);
+            $("#enddat").attr("disabled", true);
+        }
+    </script>
+    <!-- 艺术普及活动查询 -->
+    <div class="tempBox">
+        <div class="tempBox-tit">
+            <h2>艺术普及活动查询</h2>
+        </div>
+        <div class="temp-query-nr">
+            <input type="hidden" name="base" value="" id="base"/>
+            <div class="ysjt-cx-input">
+                <input type="text" class="text" name="gjc" id="gjc" value="关键字" style="color:#999;" onfocus="if(this.value=='关键字') this.value='';" onblur="if(this.value=='') {this.value='关键字';}"/>
+            </div>
+            <div class="ysjt-cx-input_1">
+                <p>
+                    <input type="text" class="text start-date text-bg" style="background:url(http://s1.chncpa.org/r/cms/www/red/img/calendar_yellow.png) no-repeat right center;" id="begindate" onclick="cha();"/>
+                </p>
+                <span>至</span>
+                <p>
+                    <input type="text" class="text end-date text-bg" style="background:url(http://s1.chncpa.org/r/cms/www/red/img/calendar_yellow.png) no-repeat right center;" id="enddat" onclick="cha();"/>
+                </p>
+            </div>
+            <div class="ysjt-cx-input">
+                <select name="typeajx" id="typeajx">
+                    <option value="">全部</option>
+                    <option value="49">周末音乐会</option>
+                    <option value="51">艺术讲座</option>
+                    <option value="54">艺术沙龙</option>
+                    <option value="86">公开排练</option>
+                    <option value="88">大师见面会</option>
+                </select>
+            </div>
+            <div class="temp-puji-check">
+                <div class="row">
+                    <p>
+                        <label>
+                            <input type="radio" name="ysml" id="ysml" value="8"/>
+                            <span>歌剧</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="ysml" id="ysml" value="10"/>
+                            <span>音乐</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="ysml" id="ysml" value="9"/>
+                            <span>舞蹈</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="row">
+                    <p>
+                        <label>
+                            <input type="radio" name="ysml" id="ysml" value="11"/>
+                            <span>戏剧</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="ysml" id="ysml" value="12"/>
+                            <span>戏曲</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="row">
+                    <p>
+                        <label>
+                            <input type="radio" name="cha" id="cha" value="thisweek" onclick="date();"/>
+                            <span>本周</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="cha" id="cha" value="thismonth" onclick="date();"/>
+                            <span>本月</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="ysjt-cx-btn">
+                    <input type="submit" class="hd-search-butt" value="搜索" onclick="find();"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 艺术普及活动查询 -->
+    <!-- 艺术普及活动查询 -->
+    <!-- 经典艺术讲堂推荐start -->
+    <ul class="yspj-right-box_1">
+        <li class="title">
+            <h4>经典艺术讲堂推荐</h4>
+            <a href="../jdysjt/" target="_blank"></a>
+        </li>
+        <li class="r-zmyyh">
+            <dl class="yspj-right-list">
+                <dd class="zm-list-img">
+                    <a href="http://ticket.chncpa.org/activProduct-1095937.html" target="_blank">
+                        <img src="../jdysjt/jqhdap_268/202303/P020230310564993493262.jpg" width="220" alt=""/>
+                    </a>
+                </dd>
+                <dt class="dhy_height">
+                    <a title='春赏江南丝竹韵——汤家班大师带您品味丝竹之声' href="http://ticket.chncpa.org/activProduct-1095937.html" target="_blank" class="yspj-title-a">汤家班大师带您品味丝竹之声
+                </a>
+                </dt>
+                <dd class="ycjc">2023/04/02 14:30
+                &nbsp;新闻发布厅
+              </dd>
+                <!-- 2014-11-14 llli 修改_经典讲堂和唱片世界没有主讲人时，按照以下逻辑依次抓取标签予以显示：指挥、艺术家、嘉宾、主持人、表演嘉宾、演出团体 -->
+                <dd class="over nieps">
+                    <div>
+                        <div class="dd">
+                        <!--248548,248549,248550-->
+                        主讲人：
+                      
+                        汤良兴
+                      
+                      ,
+                        詹永明
+                      ,
+                        翁镇发
+                      
+                    
+                    
+                    
+                    </div>
+                    </div>
+                </dd>
+                <dd>
+                    <a href="http://ticket.chncpa.org/activProduct-1095937.html" target="_blank" class="yspj-book-ticket_1">订票</a>
+                </dd>
+            </dl>
+        </li>
+    </ul>
+    <!-- 经典艺术讲堂推荐end -->
+    <!-- 走进唱片里的世界推荐 -->
+    <ul class="yspj-right-box_1">
+        <li class="title">
+            <h4>走进唱片里的世界推荐</h4>
+            <a href="../zjcpldsj/" target="_blank"></a>
+        </li>
+        <li class="r-zmyyh">
+            <dl class="yspj-right-list">
+                <dd class="zm-list-img">
+                    <a href="http://ticket.chncpa.org/activProduct-1095683.html" target="_blank">
+                        <img src="../zjcpldsj/jqhdap_272/202303/P020230306360346791558.png" width="220" alt=""/>
+                    </a>
+                </dd>
+                <dt class="dhy_height">
+                    <a title='【“纪念大师”系列】纪念瓦格纳诞辰210周年：圣杯、火焰与骑士——瓦格纳歌剧之旅' href="http://ticket.chncpa.org/activProduct-1095683.html" target="_blank" class="yspj-title-a">纪念瓦格纳诞辰210周年：圣杯、火焰与骑士——瓦格纳歌剧之旅
+                </a>
+                </dt>
+                <dd class="ycjc">2023/04/02 14:30
+                &nbsp;艺术资料中心
+              </dd>
+                <!-- 2014-11-14 llli 修改_经典讲堂和唱片世界没有主讲人时，按照以下逻辑依次抓取标签予以显示：指挥、艺术家、嘉宾、主持人、表演嘉宾、演出团体 -->
+                <dd class="nieps">
+                    <div>
+                        <div class="dd">
+                        <!--232565-->
+                        主讲人：
+                      
+                        高屹
+                      
+                      
+                    
+                    
+                    
+                    </div>
+                    </div>
+                </dd>
+                <dd>
+                    <a href="http://ticket.chncpa.org/activProduct-1095683.html" target="_blank" class="yspj-book-ticket_1">订票</a>
+                </dd>
+            </dl>
+        </li>
+    </ul>
+    <!-- 走进唱片里的世界推荐 -->
+    <dl class="yspj-help">
+        <dt>艺术普及快捷帮助</dt>
+        <dd>
+            <a href="https://www.chncpa.org/gywm0118/bzzx/cjyspjhd_399/202203/t20220314_241201.shtml">如何购票
+              </a>
+            <a href="https://www.chncpa.org/gywm0118/bzzx/cjyspjhd_399/202203/t20220314_241198.shtml">观众须知
+              </a>
+            <a href="https://www.chncpa.org/gywm0118/bzzx/jrdjy_404/202203/t20220314_241219.shtml" class="none-border">如何到达
+              </a>
+            <a href="https://www.chncpa.org/gywm0118/bzzx/cjyspjhd_399/202203/t20220314_241197.shtml" class="none-border">常见问题
+              </a>
+        </dd>
+    </dl>
+    <div class="clear"></div>
+</div>
+</div></div>
+<!-- 页脚start -->
+<!--======= 内容部分结束，页尾开始 ====-->
+<!--======= 舞蹈节追踪代码 ====-->
+<img src="../../images/cm_56.gif" style="width: 1px; height: 1px; display:none;"/>
+<img src="./images/pixel" style="width: 1px; height: 1px; display:none;"/>
+<img src="./images/saved_resource" style="width: 1px; height: 1px; display:none;"/>
+<img src="./images/pixel(1)" style="width: 1px; height: 1px; display:none;"/>
+<img src="./images/event" style="width: 1px; height: 1px; display:none;"/>
+<div class="clear"></div>
+<!-- 页脚 -->
+<!-- 页脚 -->
+<style>
+    .foot-right {
+        width: auto;
+        /*margin-right:80px*/
+    }
+
+    .wlink {
+        color: inherit
+    }
+
+    .wlink:hover {
+        color: inherit
+    }
+
+    .cgyl-foot-bg {
+        background: url(../../images/cgyl-foot-bg.jpg) no-repeat center top;
+    }
+
+    .yspj-zmyyh-pro-list dd.over {
+        min-height: 16px;
+    }
+
+    .foot-right p .newicp {
+        width: auto;
+        padding-left: 22px;
+        background: url(/images/icpbg.png) left center no-repeat;
+    }
+
+    .foot-left ul li a {
+        display: block;
+        width: auto
+    }
+
+    .foot {
+        background-image: url(/images/footer_friend20221124.png)
+    }
+</style>
+<div class="footer">
+    <div class="index-center foot">
+        <div class="foot-left">
+            <ul>
+                <li class="first" style="width:49px">
+                    <a title="梅赛德斯-奔驰" href="http://www.mercedes-benz.com.cn/content/china/mpc/mpc_china_website/zhng/home_mpc/passengercars.flash.html" target="_blank"></a>
+                </li>
+                <li style="width:112px">
+                    <a title="中国银行" href="http://www.boc.cn/index.html" target="_blank"></a>
+                </li>
+                <li style="width:124px">
+                    <a title="中国人寿" href=" https://www.chinalife.com.cn" target="_blank"></a>
+                </li>
+                <li>
+                    <a href="http://www.fsig.com.cn/" target="_blank" title="金融街"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="foot-right">
+            <div class="foot-subnav">
+                <!-- /register.jspx -->
+                <a href="https://www.chncpa.org/gywm0118/bzzx/" target="_blank">帮助中心</a>
+                <a href="https://www.chncpa.org/gywm0118/zxns/" target="_blank">招贤纳士</a>
+                <!-- <a href='/ZyttAct/hep.jspx?hid=3' target="_blank">联系我们</a> -->
+                <a href="https://www.chncpa.org/dbdh/lxwm/" target="_blank">联系我们</a>
+                <a href="http://ticket.chncpa.org/message/intoMessageInterface" target="_blank">留言反馈</a>
+                <a href="https://www.chncpa.org/dbdh/zscqsm/" target="_blank">知识产权声明</a>
+                <!-- <a href='/ZyttAct/hep.jspx?hid=5' target="_blank">知识产权声明</a>  -->
+                <!-- <a href='/ZyttAct/hep.jspx?hid=6' target="_blank">防伪声明</a> -->
+                <a href="https://www.chncpa.org/dbdh/fwsm/" target="_blank">防伪声明</a>
+            </div>
+            <p>
+                国家大剧院官方网站版权所有<span></span>
+                京ICP备05019833号<span></span>
+            </p>
+            <p>
+                <span class="newicp">京公网安备11010202007651号</span>
+                <span></span>
+                <a href="https://www.chncpa.org/wlxk/" class="wlink">信息网络传播视听节目许可证号：0111622</a>
+            </p>
+            <p>
+                地址：中国北京市西城区西长安街2号<span></span>
+                邮编：100031
+            </p>
+            <!--  <div style="position:absolute;top:60px;right:-70px;">-->
+            <div style="position:absolute;top:60px;right:-70px;">
+                <!--	  <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='https://dcs.conac.cn/js/01/000/0000/60436235/CA010000000604362350001.js' type='text/javascript'%3E%3C/script%3E"));</script>-->
+                <span id="_ideConac">
+                    <a href="https://bszs.conac.cn/sitename?method=show&id=09EC63C1CE594109E053022819AC324A" target="_blank">
+                        <img id="imgConac" vspace="0" hspace="0" border="0" src="/images/blue_45.png" data-bd-imgshare-binded="1"/>
+                    </a>
+                </span>
+                <!-- <script src="../../images/CA010000000604362350001_45.js" type="text/javascript"></script>-->
+                <span id="_ideConac"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function() {
+        var sas = $("body a");
+        var sal = sas.length;
+        for (var i = 0; i < sal; i++) {
+            var salink = sas.eq(i).attr("href");
+            if (salink == null || salink == "" || salink == "javascript:void(0);") {
+                sas.eq(i).attr({
+                    "target": "_self",
+                    "href": "javascript:void(0);"
+                });
+            }
+            if (salink) {
+                salink = salink.replace("zwmh/", "");
+                sas.eq(i).attr("href", salink);
+            }
+
+        }
+        /*if($('.detailArt').length > 0){
+var vid=$('.detailArt').find('div[id]').attr('id');
+var flash = $('.detailArt').find('embed').eq(0).attr('flashvars').split('&');
+var centerArray = flash.filter(item => item.indexOf('videoCenterId')==0)[0].split('=')[1];
+var dataImage = $('.detailArt').attr('data-image')
+console.log('flash是'+flash );
+console.log(centerArray);
+bofang(vid,centerArray,dataImage)
+
+}*/
+    })
+</script>
+<!--[if IE 6]>
+<script src="/images/iepng.js?version=20160405085205" type="text/javascript"></script>
+<script type="text/javascript">
+  //EvPNG.fix("包含透明PNG图片的标签"); 多个标签之间用英文逗号隔开
+  EvPNG.fix(".index-top h2 img,.header .index-top .nav li a.fir,.header .index-top-subnav a.cart-switch,.header a.a2,.header a.a3,.header a.a4,.header .index-top-right .search .s-btn,.foot,.error404"); 
+</script>
+<![endif]-->
+<script id="_trs_ta_js" src="//ta.trs.cn/c/js/ta.js?mpid=841" async="async" defer="defer"></script>
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc0f83d11c5318938a003c0a00dcded64' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!-- Gridsum tracking code begin. -->
+<script type='text/javascript'>
+    var _gsq = _gsq || [];
+    (function() {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://ssl.gridsumdissector.com/js/Clients/GWD-002230-464E3B/gs.js';
+        var firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(s, firstScript);
+    }
+    )();
+</script>
+<!-- 页脚end -->
+<style>
+    .foot {
+        background-color: #0A429B !important;
+        width: 990px !important;
+        min-width: 990px
+    }
+
+    .zixun-con {
+        font-family: '宋体'
+    }
+
+    .footer {
+        overflow: hidden
+    }
+</style>
+<!-- 页脚end -->
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+</body></html>
